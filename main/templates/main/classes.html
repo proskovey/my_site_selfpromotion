@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Проект</title>
+    <link rel="stylesheet" href="{% static 'css/background.css' %}">
+</head>
+<body>
+    <style>
+        button {
+            padding: 0.5em 1.5em; 
+            background-color: rgb(255, 255, 255);
+            font-size: 0.9em; /* Размер текста */
+            text-transform: uppercase; /* Все буквы заглавные */
+            color: DarkSlateGray; /* Цвет текста */
+            border-radius: 0.4em; /* Радиус скругления */
+        }
+        button:hover {
+            background-color: aquamarine;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+    </style>
+    <a href="{% url 'index' %}" style="text-decoration: none; position: relative; 
+        right: -10px; bottom: -100px;">
+        <button> < назад</button>
+    </a>
+
+    <h1 class="title"><span>job search</span></h1>
+    <div class="text">
+        <pre>
+            <p>
+                                                PYTHON
+
+                        def job_search(language, name):
+                            level = 'novice'
+                            return f"My name is {name}, I`am a {level} {language} programmer"
+                        
+                        print(job_search('Python', 'Danil'))
+                        print('89', '', '7', '1304', '', sep='6')
+                        
+                        
+                                            ДВОИЧНЫЙ КОД
+
+                        10000111101 10000110000 10001000111 10000111000 10000111101 
+                        10000110000 10001001110 10001001001 10000111000 10000111001 
+                        100000 10000111111 10001000000 10000111110 10000110011 1000
+                        1000000 10000110000 10000111100 10000111100 10000111000 100
+                        01000001 10001000010 100000 10000111101 10000110000 100000 
+                        1110000 1111001 1110100 1101000 1101111 1101110 1010 100001
+                        11000 10001001001 10001000011 100000 10001000000 1000011000
+                        0 10000110001 10000111110 10001000010 10001000011 1010 1000
+                        0110100 10000110000 10000111101 10000111000 10000111011 100
+                        000 111000 111001 110110 110110 110111 110110 110001 110011
+                                        110000 110100 110110
+            </p>
+        </pre>
+    </div>
+</body>
+</html>

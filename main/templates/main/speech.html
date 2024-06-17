@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Проект</title>
+    <link rel="stylesheet" href="{% static 'css/background.css' %}">
+</head>
+<body>
+    <style>
+        button {
+            padding: 0.5em 1.5em; 
+            background-color: rgb(255, 255, 255);
+            font-size: 0.9em; /* Размер текста */
+            text-transform: uppercase; /* Все буквы заглавные */
+            color: DarkSlateGray; /* Цвет текста */
+            border-radius: 0.4em; /* Радиус скругления */
+        }
+        button:hover {
+            background-color: aquamarine;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+    </style>
+    <a href="{% url 'index' %}" style="text-decoration: none; position: relative; 
+        right: -10px; bottom: -100px;">
+        <button>< назад</button>
+    </a>
+
+    <h1 class="title"><span>Телеграмм бот (продажа авто)</span></h1>
+    <div class="text">
+        <pre>
+        <p>
+            import telebot
+            from telebot import types
+            bot = telebot.TeleBot('TOKEN')
+
+            @bot.message_handler(commands=['start'])
+            def start(message):
+                markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+                btn1 = types.KeyboardButton('Начнём')
+                markup.add(btn1)
+                bot.send_message(message.from_user.id, 'AVTOUsed', reply_markup=markup)
+
+            @bot.message_handler(content_types=['text'])
+            def get_text_message(message):
+
+                if message.text == 'Начнём':
+                    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+                    btn1 = types.KeyboardButton('Mazda 6')
+                    btn2 = types.KeyboardButton('Volkswagen Tiguan')
+                    btn3 = types.KeyboardButton('Контакты')
+                    markup.add(btn1, btn2, btn3)
+                    bot.send_message(message.from_user.id, 'Выбери авто', reply_markup=markup)
+
+                elif message.text == 'Mazda 6':
+                    bot.send_photo(message.from_user.id, 'https://avatars.mds.yandex.net/get-autoru-vos
+                    /2111725/d061b06cb252615db219d3edd1cd591c/1200x900', caption='Описание автомобиля. Цена. Телефон')
+
+                elif message.text == 'Volkswagen Tiguan':
+                    bot.send_photo(message.from_user.id, 'https://i.pinimg.com/originals/49/9f/a1/
+                    499fa104a723756b1b18767671ce9ffe.jpg', caption='Описание автомобиля. Цена. Телефон')
+
+                elif message.text == 'Контакты':
+                    bot.send_message(message.from_user.id, text='Телефон: +79999999999, Email: 1234567890.@gmail.com')
+
+            bot.polling(none_stop=True, interval=0)
+        </p>
+        </pre>
+    </div>
+</body>
+</html>

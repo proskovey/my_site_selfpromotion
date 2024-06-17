@@ -1,0 +1,355 @@
+body {
+    color: Cyan;
+    /* background-color: AliceBlue;  */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+}
+
+.basic {
+    position: relative; 
+    transition: 0.5s; 
+    z-index: 6;
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0,.7);
+}
+
+.basic:hover {
+    -moz-transform-origin: 0px 0px;     
+    -webkit-transform-origin: 0px 0px;
+    -moz-transform: scale(2, 2);
+    -webkit-transform: scale(2, 2);
+} 
+
+.basic_2 {
+    position: relative; 
+    right: -50px; 
+    bottom: 0px;
+    transition: 0.5s; 
+    z-index: 5;
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0,.7);
+}
+
+.basic_2:hover {
+    -moz-transform-origin: 0px 0px;     
+    -webkit-transform-origin: 0px 0px;
+    -moz-transform: scale(2, 2);
+    -webkit-transform: scale(2, 2); 
+}
+
+.git {
+    position: relative; 
+    right: -90px; 
+    bottom: 0px;
+    transition: 0.5s; 
+    z-index: 4;
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0,.7);
+}
+.git:hover {
+    -moz-transform-origin: 0px 0px;     
+    -webkit-transform-origin: 0px 0px;
+    -moz-transform: scale(2, 2);
+    -webkit-transform: scale(2, 2); 
+}
+
+.databas {
+    position: relative; 
+    right: -130px; 
+    bottom: 0px;
+    transition: 0.5s; 
+    z-index: 3;
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0,.7);
+}
+.databas:hover {
+    -moz-transform-origin: 0px 0px;     
+    -webkit-transform-origin: 0px 0px;
+    -moz-transform: scale(2, 2);
+    -webkit-transform: scale(2, 2); 
+}
+
+.django {
+    position: relative; 
+    right: -170px; 
+    bottom: 0px;
+    transition: 0.5s; 
+    z-index: 2;
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0,.7);
+}
+.django:hover {
+    -moz-transform-origin: 0px 0px;     
+    -webkit-transform-origin: 0px 0px;
+    -moz-transform: scale(2, 2);
+    -webkit-transform: scale(2, 2); 
+}
+
+.html_css {
+    position: relative; 
+    right: -200px; 
+    bottom: 0px;
+    transition: 0.5s; 
+    z-index: 1;
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0,.7);
+}
+.html_css:hover {
+    -moz-transform-origin: 0px 0px;     
+    -webkit-transform-origin: 0px 0px;
+    -moz-transform: scale(2, 2);
+    -webkit-transform: scale(2, 2); 
+}
+
+.promo {
+    color: Cyan;
+    position: relative;
+    right: -700px; 
+    bottom: -50px;
+    margin: 0px;
+    text-shadow: 5px 8px 3px rgba(0, 0, 0,.7);
+}
+
+.my_project {
+    color: Cyan;
+    position: relative; 
+    right: -1300px; 
+    bottom: 0px; 
+    margin: 0px;
+    width: 300px; 
+    height: 50px;
+    text-shadow: 5px 8px 3px rgba(0, 0, 0,.7);
+}
+
+.fullstack {
+    position: relative; 
+    right: -400px; 
+    bottom: 580px; 
+    margin-top: 5px;
+    color: Cyan; 
+    width: 500px;
+    height: 74px;
+    text-shadow: 5px 10px 3px rgba(0, 0, 0,.7);
+}
+
+.skill {
+    width: 180px; 
+    height: 30px; 
+    position: relative; 
+    right: -570px;
+    bottom: 450px;
+    text-shadow: 5px 10px 3px rgba(0, 0, 0,.7);
+}
+
+.kit {
+    width: 170px; 
+    height: 40px; 
+    position: relative; 
+    right: -570px;
+    bottom: 450px;
+}
+
+.contact {
+    width: 300px; 
+    height: 100px; 
+    position: relative; 
+    bottom: 500px;
+    left: 20px;
+}
+
+.sertif {
+    position: relative;
+    right: -570px;
+    bottom: 450px;
+    transition: 0.5s; /* Время эффекта */
+    z-index: 1;
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0,.7);
+}
+
+.sertif:hover {
+    transform: scale(2.2);
+}
+
+.png {
+    position: relative;
+    right: -700px;
+    bottom: 350px;
+}
+
+.py {
+    position: relative;
+    right: 220px;
+    bottom: 350px;
+}
+
+.gitlog {
+    position: relative;
+    right: 320px;
+    bottom: 300px;
+}
+
+.data_ll {
+    position: relative;
+    right: 390px;
+    bottom: 220px;
+}
+
+.django_l {
+    position: relative;
+    right: 460px;
+    bottom: 130px;
+}
+
+.htmlcss {
+    position: relative;
+    right: 535px;
+    bottom: 50px;
+}
+
+.silver {
+    position: relative;
+    right: 0px;
+    bottom: 50px;
+}
+
+/* ============================================================ */
+
+.creat_func {
+    display: inline-block;
+    border-radius: 2px;
+    /* background-image: none; */
+    background-color: transparent;
+    /* background: transparent; */
+    border: 5px solid Cyan;
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0,.7);
+    color: Cyan;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 0.5em 1.5em;
+    text-transform: uppercase; /* Все буквы заглавные */
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    width: 200px; 
+    height: 50px;
+}
+.creat_func span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.creat_func span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    /* right: -20px; */
+    /* transition: 0.5s; */
+}
+.creat_func:hover span {
+    padding-right: 25px;
+}
+.creat_func:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* ========================================================== */
+
+.classes {
+    display: inline-block;
+    border-radius: 2px;
+    background-color: transparent;
+    border: 5px solid Cyan;
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0,.7);
+    color: Cyan;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 0.5em 1.5em;
+    text-transform: uppercase; /* Все буквы заглавные */
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    width: 200px; 
+    height: 50px;
+}
+.classes span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.classes span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    /* right: -20px; */
+    /* transition: 0.5s; */
+}
+.classes:hover span {
+    padding-right: 25px;
+}
+.classes:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* ================================================================== */
+
+.name {
+    position: relative;
+    right: 240px;
+    bottom: 57px;
+}
+
+.circle {
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    border:1px solid;
+    width:5px;
+    height:5px;
+    position: relative;
+    right: 40px;
+    bottom: 115px;
+    color: black;
+}
+
+/* ============================================= */
+
+.speek {
+    display: inline-block;
+    border-radius: 2px;
+    background-color: transparent;
+    border: 5px solid Cyan;
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0,.7);
+    color: Cyan;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 0.5em 1.5em;
+    text-transform: uppercase; /* Все буквы заглавные */
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    width: 200px; 
+    height: 50px;
+}
+.speek span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.speek span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    /* right: -20px; */
+    /* transition: 0.5s; */
+}
+.speek:hover span {
+    padding-right: 25px;
+}
+.speek:hover span:after {
+    opacity: 1;
+    right: 0;
+}

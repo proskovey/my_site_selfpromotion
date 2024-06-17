@@ -1,0 +1,229 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Главная</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <style>
+    body {
+        background-image: url("https://catherineasquithgallery.com/uploads/posts/2023-01/1674281029_catherineasquithgallery-com-p-serii-besshovnii-fon-foto-116.jpg");
+    }
+    </style>
+</head>
+
+<body>
+    <img src="{% static 'images/basics_1.png' %}" class="basic" width="200" tabindex="1">
+    <img src="{% static 'images/basics_2.png' %}" class="basic_2" width="200">
+    <img src="{% static 'images/github.png' %}" class="git" width="200">
+    <img src="{% static 'images/database.png' %}" class="databas" width="200">
+    <img src="{% static 'images/django.png' %}" class="django" width="200">
+    <img src="{% static 'images/html_css.png' %}" class="html_css" width="200">
+
+    <div class="promo">
+        <h3>SELFPROMOTION</h3>
+    </div>
+
+    <h2 class="my_project">My PROJECTS</h2>
+
+    <img src="{% static 'images/image.png' %}" class="silver" width="180">
+    <img src="{% static 'images/png.png' %}" class="png" width="400">
+    <img src="{% static 'logo/python_l.png' %}" class="py" width="100">
+    <img src="{% static 'logo/github_l.png' %}" class="gitlog" width="60">
+    <img src="{% static 'logo/data_ll.png' %}" class="data_ll" width="70">
+    <img src="{% static 'logo/django_l.png' %}" class="django_l" width="70">
+    <img src="{% static 'logo/htmlcss_l.png' %}" class="htmlcss" width="70">
+ 
+    <!-- КНОПКА СОЗДАНИЕ ФУНКЦИЙ -->
+    <a href="{% url 'function' %}" style="text-decoration: none; position: relative; 
+        right: -335px; bottom: 320px;">
+        <button class="creat_func"><span>creating functions</span></button>
+    </a>
+
+    <!-- КНОПКА job search -->
+    <a href="{% url 'class' %}" style="text-decoration: none; position: relative; 
+        right: -120px; bottom: 205px;">
+        <button class="classes"><span>Job search</span></button>
+    </a>
+
+    <!--КНОПКА ТЕЛЕГРАММ БОТ -->
+    <a href="{% url 'speech' %}" style="text-decoration: none; 
+        position: relative; right: 90px; bottom: 450px;">
+        <button class="speek"><span>telegram bot</span></button>
+    </a>
+
+
+    <div class="fullstack">
+        <h1>A BEGINNER<br> FULLSTACK PROGRAMMER</h1>
+    </div>
+    
+    <h2 class="skill">My S K I L L S:</h2>
+    <p class="kit">PYTHON, GITHub, DB<br> DJANGO, HTML и CSS</p>
+    <img class="sertif" src="{% static 'images/sertific.png' %}" width="300">
+        
+    <div class="contact">
+        <style>
+            a:hover {
+                background: Cyan;
+            }
+        </style>
+        <h2 style="margin-bottom: 5px; text-shadow: 6px 7px 3px rgba(0, 0, 0,.7);">My CONTACTS</h2>
+        <!-- <p style="margin-bottom: 0; margin-top: 5px; text-shadow: 5px 5px 5px rgba(0, 0, 0,.7);">Vk:<a target="_blank"
+            href="https://vk.com/danil_babkin" style="font-size: 19px; color: white; text-decoration: none;"> вконтакте</a></p> -->
+        <p style="margin-top: 0; margin-bottom: 0; text-shadow: 5px 5px 5px rgba(0, 0, 0,.7);">Phone: <a style="font-size: 19px; color: white;;">89667613046</a></p>
+        <p style="margin-top: 0; margin-bottom: 0px; text-shadow: 5px 5px 5px rgba(0, 0, 0,.7);">E-mail: <a style="font-size: 19px; color: white;">danil.babkin.85@mail.ru</a></p>
+        <p style="margin-top: 0; text-shadow: 5px 5px 5px rgba(0, 0, 0,.7);">GitHub:<a target="_blank"
+            href="https://github.com/proskovey" style="font-size: 19px; color: white; text-decoration: none;"> proskovey</a></p>
+    </div>
+
+    <!-- перевернутая буква "Г" -->
+    <div id="cross">
+        <style>
+            #cross {
+                background: Cyan;
+                height: 250px;
+                position: relative;
+                left: 1500px;
+                width: 50px;
+                top: -1420px;
+                box-shadow: 0 10px 20px 10px rgba(0, 0, 0,.7);
+            }
+            #cross:after {
+                background: Cyan;
+                content: "";
+                height: 15px;
+                left: -250px;
+                position: absolute;
+                top: 250px;
+                width: 300px;
+                box-shadow: 0 25px 15px 10px rgba(0, 0, 0,.7);
+            }
+        </style>
+    </div>
+    
+    <!-- Стандартная буква "Г" -->
+    <div id="cross1">
+        <style>
+            #cross1 {
+                background: Cyan;
+                height: 500px;
+                position: relative;
+                left: 500px;
+                width: 50px;
+                top: -1210px;
+                box-shadow: 0 10px 20px 10px rgba(0, 0, 0,.7);
+            }
+            #cross1:after {
+                background: Cyan;
+                content: "";
+                height: 15px;
+                left: 50px;
+                position: absolute;
+                top: 0px;
+                width: 350px;
+                box-shadow: 20px 20px 20px 10px rgba(0, 0, 0,.7);
+            }
+        </style>
+    </div>
+
+    <!-- Главная тройная буква "Г" -->
+    <div id="cross2">
+        <style>
+            #cross2 {
+                background: Cyan;
+                height: 550px;
+                position: relative;
+                left: 300px;
+                width: 40px;
+                top: -1920px;
+                box-shadow: 0 10px 20px 10px rgba(0, 0, 0,.7);
+            }
+            #cross2:after {
+                background: Cyan;
+                content: "";
+                height: 15px;
+                left: -300px;
+                position: absolute;
+                top: 535px;
+                width: 315px;
+                box-shadow: -20px 20px 20px 10px rgba(0, 0, 0,.7);
+            }
+            #cross2:before { 
+                background: Cyan;
+                content: "";
+                height: 15px;
+                left: 0px;
+                position: absolute;
+                top: 0px;
+                width: 600px;
+                box-shadow: 60px 15px 20px 10px rgba(0, 0, 0,.7);
+            }
+        </style>
+
+        <!-- с этим можно работать -->
+    <svg viewBox="0 0 500 80" width="500" height="80" stroke="black" class="name">
+        <text x="75" y="22" font-size="19" stroke="black" stroke-width="0.4">Бабкин Данил</text>
+        <text x="75" y="45" font-size="19" stroke="black" stroke-width="0.4">Владимирович</text>
+        <text x="75" y="65" font-size="19" stroke="black" stroke-width="0.4">Тюмень 38 лет</text>
+        <line x1="0" x2="50" y1="80" y2="30" />
+        <line x1="50" x2="200" y1="30" y2="30" />
+    </svg>
+    <!-- А это круглешек, уже подогнанный -->
+    <div class="circle"></div>
+    </div>
+
+    <!--КНОПКА ПОДСЧЕТ ОЧКОВ -->
+    <a href="{% url 'speech' %}" style="text-decoration: none; 
+        position: relative; right: -1310px; bottom: 1995px;">
+        <button class="speek"><span>scoring points</span></button>
+    </a>
+
+    <a href="static/images/resume.docx" download class="down">Резюме Word</a>
+    <style>
+        .down {
+            text-decoration: none; 
+            position: relative; 
+            right: -820px; 
+            bottom: 1950px;
+            font-size: 20px;
+        }
+        .down[download]::after {
+            content: ''; /* Пустое содержимое */
+            display: inline-block; /* Преобразуем в строчно-блочный элемент */
+            width: 20px; /* Ширина картинки */
+            height: 20px; /* Высота картинки */
+            background-image: url('https://e7.pngegg.com/pngimages/634/732/png-clipart-computer-icons-symbol-symbol-miscellaneous-cdr.png'); /* Выводим фоновую картинку */
+            background-size: 100%; /* Масштабируем картинку */
+            margin-left: 0.4em; /* Расстояние от картинки до текста */
+            vertical-align: baseline; /* Положение по вертикали */
+        }
+    </style>
+
+
+    <a href="static/images/graf.pdf" download class="down1">Резюме PDF</a>
+    <style>
+        .down1 {
+            text-decoration: none; 
+            position: relative; 
+            right: -680px; 
+            bottom: 1900px;
+            font-size: 20px;
+        }
+        .down1[download]::after {
+            content: ''; /* Пустое содержимое */
+            display: inline-block; /* Преобразуем в строчно-блочный элемент */
+            width: 20px; /* Ширина картинки */
+            height: 20px; /* Высота картинки */
+            background-image: url('https://e7.pngegg.com/pngimages/634/732/png-clipart-computer-icons-symbol-symbol-miscellaneous-cdr.png'); /* Выводим фоновую картинку */
+            background-size: 100%; /* Масштабируем картинку */
+            margin-left: 0.4em; /* Расстояние от картинки до текста */
+            vertical-align: baseline; /* Положение по вертикали */
+        }
+    </style>
+    
+
+
+</body>
+</html>

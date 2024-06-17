@@ -1,0 +1,31 @@
+html {
+    background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-02/1614262954_13-p-chernaya-kirpichnaya-stena-fon-13.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+p {
+    background: #ececec; 
+    border:10px double black; 
+    width: 850px; 
+    padding: 10px 0 10px 15px;  
+    margin:20px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    padding: 60px;
+    text-align: center;
+    background: Cyan;
+    color: white;
+    font-size: 30px;
+  }

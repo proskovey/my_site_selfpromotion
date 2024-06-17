@@ -1,0 +1,106 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Проект</title>
+    <link rel="stylesheet" href="{% static 'css/background.css' %}">
+</head>
+<body>
+    <style>
+        button {
+            padding: 0.5em 1.5em; 
+            background-color: rgb(255, 255, 255);
+            font-size: 0.9em; /* Размер текста */
+            text-transform: uppercase; /* Все буквы заглавные */
+            color: DarkSlateGray; /* Цвет текста */
+            border-radius: 0.4em; /* Радиус скругления */
+        }
+        button:hover {
+            background-color: aquamarine;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+    </style>
+    <a href="{% url 'index' %}" style="text-decoration: none; position: relative; 
+        right: -10px; bottom: -100px;">
+        <button>< назад</button>
+    </a>
+
+    <h1 class="title"><span>Создание функций</span></h1>
+    <div class="text">
+        <pre>
+        <p>
+        documents = [
+            {"type": "passport", "number": "2207 876234", "name": "Василий Гупкин"},
+            {"type": "invoice", "number": "11-2", "name": "Геннадий Покемонов"},
+             {"type": "insurance", "number": "10006", "name": "Аристарх Павлов"}
+        ]
+        directories = {
+            '1': ['2207 876234', '11-2'],
+            '2': ['10006'],
+            '3': []
+        }
+        
+        # p – people – команда, которая спросит номер документа и выведет имя человека, которому он принадлежит;
+        
+        def people():
+            number = input('Введите номер документа: ')
+            for i in documents:
+                if i.get("number") == number:
+                return i.get("name")
+            return "Такого номера нет"
+        
+        # s – shelf – команда, которая спросит номер документа и выведет номер полки, на которой он находится; 
+        Правильно обработайте ситуации, когда пользователь будет вводить несуществующий документ.
+        
+        def shelf():
+            number = input('Введите номер документа: ')
+            for x in directories:
+                if number in directories.get(x):
+                return x
+            return "Такого номера нет"
+        
+        # l– list – команда, которая выведет список всех документов в формате passport "2207 876234" "Василий Гупкин".
+        
+        def list_doc(documents):
+            for n in documents:
+                print(", ".join(list(n.values())))
+        
+        #a – add – команда, которая добавит новый документ в каталог и в перечень полок, спросив его номер, 
+        тип, имя владельца и номер полки, на котором он будет храниться. Корректно обработайте ситуацию, когда 
+        пользователь будет пытаться добавить документ на несуществующую полку.
+        
+        def add_command(type_1, number, name, direct):
+            if int(direct) == 1 or int(direct) == 2 or int(direct) == 3:
+                documents.append({"type": type_1, "number": number, "name": name})
+                directories[direct].append(number)
+                print('Документ добавлен')
+            else:
+                print('Такой полки нет')
+        
+        
+        print('Команды: ')
+        print('p - узнать имя человека, которому принадлежит документ')
+        print('s - узнать номер полки документа')
+        print('l - список всех документов')
+        print('a - добавить документ')
+        
+        while True:
+            #print('Возможные команды: p, s, l, a')
+            comand = input('\nВведите команду: ')
+            if comand == 'p':
+            print(people())
+            elif comand == 's':
+            print(shelf())
+            elif comand == 'l':
+            list_doc(documents)
+            elif comand == 'a':
+            print(add_command(input('\nВведите тип документа: '), input('Введите номер документа: '), 
+            input('Введите имя: '), input('Введите номер полки: ')))
+        </p>
+        </pre>
+    </div>
+</body>
+</html>
